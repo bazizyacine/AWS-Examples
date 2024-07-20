@@ -10,8 +10,8 @@ python generate_json_logs.py > web_server_logs.json
 aws logs filter-log-events \
 --log-group-name /example/events/json/app \
 --filter-pattern '{ $.method = "PUT" }' \
---start-time 1717043643000 \
---end-time 1717076943000 \
+--start-time 1721411548000 \
+--end-time 1721444668000 \
 --query events[].message \
 --output text
 ```
